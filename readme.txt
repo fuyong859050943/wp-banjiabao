@@ -1,6 +1,6 @@
-=== WP 搬家宝 - WordPress 站点迁移与备份 ===
+=== WP BanJiaBao - WordPress Site Migration & Backup ===
 Contributors: xiaxiami
-Tags: migration, backup, restore, aliyun, tencent, cloud, oss, cos
+Tags: migration, backup, restore, aliyun, tencent, cloud, oss, cos, wordpress, site-migration
 Requires at least: 5.0
 Tested up to: 6.5
 Requires PHP: 7.4
@@ -8,75 +8,103 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-站点迁移 + 云端备份，一站式解决。支持阿里云 OSS、腾讯云 COS。
+One-click WordPress site migration and backup plugin with cloud storage support. Supports Alibaba Cloud OSS and Tencent Cloud COS.
 
 == Description ==
 
-WP 搬家宝是一款简单易用的 WordPress 站点迁移和备份插件。
+WP BanJiaBao is a simple and powerful WordPress site migration and backup plugin.
 
-**主要功能：**
+**Key Features:**
 
-* **站点迁移**：简单三步，轻松完成网站迁移
-* **一键备份**：支持完整备份、仅文件、仅数据库
-* **云端存储**：支持阿里云 OSS、腾讯云 COS
-* **定时备份**：可设置自动备份计划
-* **极简界面**：简单三步，任何人都能看懂
+* **Site Migration**: Simple 3-step process to migrate your website effortlessly
+* **One-click Backup**: Full backup, files only, or database only options
+* **Cloud Storage**: Supports Alibaba Cloud OSS and Tencent Cloud COS
+* **Scheduled Backups**: Automatic daily/weekly backup schedules
+* **Clean Interface**: User-friendly design that anyone can understand
 
-**为什么选择 WP 搬家宝？**
+**Why choose WP BanJiaBao?**
 
-* 界面简洁，操作简单
-* 支持国产云存储
-* 免费版功能够用
-* 中文本地化
+* Simple interface, easy to use
+* Supports Chinese cloud storage providers
+* Free version with useful features
+* Chinese localization
+
+= Free Version Features =
+
+* Site migration up to 500MB
+* Unlimited local backup
+* Full backup / Files only / Database only
+* Manual backup anytime
+
+= Pro Version Features (Coming Soon) =
+
+* Unlimited site migration size
+* Cloud backup to Alibaba Cloud OSS / Tencent Cloud COS
+* Scheduled automatic backups
+* Incremental backup support
+* Priority support
 
 == Installation ==
 
-1. 上传 `wp-banjiabao` 文件夹到 `/wp-content/plugins/`
-2. 在 WordPress 后台"插件"页面启用 WP 搬家宝
-3. 点击左侧菜单"WP 搬家宝"开始使用
+1. Upload the `wp-banjiabao` folder to `/wp-content/plugins/`
+2. Activate WP BanJiaBao from the WordPress Plugins page
+3. Click "WP BanJiaBao" in the left menu to start using
 
-**配置云存储（可选）：**
+**Cloud Storage Configuration (Optional):**
 
-1. 进入"云存储"设置页面
-2. 填写阿里云 OSS 或腾讯云 COS 的配置信息
-3. 点击"测试连接"确认配置正确
-4. 保存配置
+1. Go to "Cloud Storage" settings page
+2. Enter your Alibaba Cloud OSS or Tencent Cloud COS configuration
+3. Click "Test Connection" to verify settings
+4. Save configuration
 
 == Frequently Asked Questions ==
 
-= 这个插件安全吗？ =
+= Is this plugin secure? =
 
-是的。WP 搬家宝遵循 WordPress 安全最佳实践，所有操作都需要管理员权限。
+Yes. WP BanJiaBao follows WordPress security best practices. All operations require administrator permissions.
 
-= 免费版有什么限制？ =
+= What are the limitations of the free version? =
 
-免费版支持最大 500MB 的网站迁移，本地备份功能无限制。
+The free version supports site migration up to 500MB. Local backup features have no limitations.
 
-= 支持哪些云服务商？ =
+= Which cloud providers are supported? =
 
-目前支持阿里云 OSS 和腾讯云 COS。
+Currently supports Alibaba Cloud OSS and Tencent Cloud COS.
 
-= 如何升级到 Pro 版？ =
+= How to upgrade to Pro version? =
 
-敬请期待！
+Coming soon! Stay tuned for updates.
+
+= Does it work with multisite? =
+
+Currently tested with single WordPress installations. Multisite support is planned for future releases.
+
+= What if migration fails? =
+
+Check that:
+1. Your server has enough disk space
+2. PHP ZipArchive extension is installed
+3. PHP exec() function is enabled
+4. File permissions are correct
 
 == Screenshots ==
 
-1. WP 搬家宝主界面
-2. 站点迁移页面
-3. 备份中心
-4. 云存储设置
+1. WP BanJiaBao main interface - Clean and intuitive dashboard
+2. Site migration page - Simple 3-step migration process
+3. Backup center - Flexible backup options
+4. Cloud storage settings - Easy cloud configuration
 
 == Changelog ==
 
 = 1.0.0 =
-* 首次发布
-* 支持站点迁移
-* 支持本地备份
-* 支持阿里云 OSS
-* 支持腾讯云 COS
-* 支持定时备份
+* Initial release
+* Site migration feature
+* Local backup feature
+* Alibaba Cloud OSS support
+* Tencent Cloud COS support
+* Scheduled backup support
 
 == Upgrade Notice ==
 
-暂无
+= 1.0.0 =
+First release! Try the free version with site migration and local backup features.
