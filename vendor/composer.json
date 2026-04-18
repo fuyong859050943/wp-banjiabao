@@ -1,0 +1,14 @@
+{
+    "name": "vendor/wp-banjiabao",
+    "description": "WP 搬家宝依赖包",
+    "type": "project",
+    "require": {
+        "aliyun/open-sdk-php": "^2.5",
+        "qcloud/cos-sdk-v5": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BJBao\\": "classes/"
+        }
+    }
+}
